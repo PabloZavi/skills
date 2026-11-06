@@ -20,6 +20,14 @@ Install it:
 npx skills@latest add PabloZavi/skills --skill say-it-plain
 ```
 
+The installer needs Node 22.20 or later. With an older Node, or with no Node, copy the skill with `curl`:
+
+```bash
+mkdir -p .claude/skills/say-it-plain && curl -fsSL https://raw.githubusercontent.com/PabloZavi/skills/main/skills/say-it-plain/SKILL.md -o .claude/skills/say-it-plain/SKILL.md
+```
+
+This path is for Claude Code. For another agent, use its skills folder.
+
 Then use it at any time, on any topic:
 
 ```text
